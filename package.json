@@ -1,0 +1,36 @@
+{
+  "name": "@mukhindev/create-bem",
+  "description": "Utility for creating BEM class names. CSS Modules support",
+  "keywords": ["bem", "css", "css-modules", "classnames"],
+  "author": "Sergey Mukhin",
+  "homepage": "https://github.com/mukhindev/create-bem/",
+  "repository": "",
+  "license": "MIT",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "dev": "npx nodemon",
+    "build": "rimraf ./dist && npx tsc",
+    "preview": "node ./dist/index",
+    "lint": "npx eslint ./src",
+    "prettify": "npx prettier --write ./src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "2.8.4",
+    "rimraf": "^4.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5",
+    "vitest": "^0.29.2"
+  }
+}

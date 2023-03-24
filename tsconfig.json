@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "target": "ES6" ,
+    "lib": ["ES6"],
+    "jsx": "react-jsx",
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "src/**/*.test.ts"],
+  "lib": ["esnext"],
+  "ts-node": { "esm": true }
+}
