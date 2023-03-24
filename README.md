@@ -69,3 +69,22 @@ Hashed names should be converted like this:
 input -> _input_{hash}
 input__label -> _input__label_{hash}
 ```
+
+## Options
+
+Often the modifier is separated by `--`. The third argument to `createBem` is options:
+
+```ts
+const bem = createBem("input", undefined, { modifierKeyDivider: "--" });
+```
+
+Default options:
+
+```ts
+                             ↓
+elementDivider: "__" // input__field_size_large
+                                        ↓                          ↓
+modifierKeyDivider: "_" //  input__field_size_large or input__field_active
+                                              ↓
+modifierValueDivider: "_" // input__field_size_large
+```
